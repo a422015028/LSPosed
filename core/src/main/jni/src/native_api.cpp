@@ -50,7 +50,6 @@
 
 namespace lspd {
 
-    using lsplant::operator""_tstr;
     std::list<NativeOnModuleLoaded> moduleLoadedCallbacks;
     std::list<std::string> moduleNativeLibs;
     std::unique_ptr<void, std::function<void(void *)>> protected_page(
